@@ -1,0 +1,29 @@
+# Ruby / Bundler
+.bundle/
+vendor/bundle/
+pkg/
+
+# Coverage / docs
+coverage/
+doc/
+.yardoc/
+
+# Test artifacts
+.rspec_status
+spec/examples.txt
+
+# Logs / temp
+log/
+tmp/
+
+# OS / editors
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Credentials / env
+.env
+.byebug_history
+

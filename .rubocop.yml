@@ -1,0 +1,77 @@
+AllCops:
+  TargetRubyVersion: 2.6
+  NewCops: enable
+  Exclude:
+    - 'coverage/**/*'
+    - 'vendor/**/*'
+    - 'bin/**/*'
+    - 'pkg/**/*'
+    - '**/*.gemspec'
+    - 'spec/spec_helper.rb'
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/Documentation:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/MethodParameterName:
+  MinNameLength: 1
+
+Naming/PredicateName:
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/ClassLength:
+  Max: 200
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/AbcSize:
+  Max: 30
+
+require:
+  - rubocop-rspec
+
+RSpec:
+  Language:
+    Expectations:
+      - expect
+
+RSpec/FilePath:
+  Enabled: false
+
+
+RSpec/MultipleExpectations:
+  Max: 5
+
+RSpec/ExampleLength:
+  Max: 40
+
+RSpec/LeakyConstantDeclaration:
+  Enabled: false
+
+RSpec/PredicateMatcher:
+  Enabled: false
+
+
+Lint/ConstantDefinitionInBlock:
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/ParameterLists:
+  Max: 6
